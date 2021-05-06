@@ -145,7 +145,7 @@ function setup() {
   if(width < height){
     backgroundImage.resize(width/2, 0)
   }else{
-    backgroundImage.resize(0, height)
+    backgroundImage.resize(0, height - 40)
   }
   console.log((height - backgroundImage.height)/2)
   image(backgroundImage, width/2, (height - backgroundImage.height)/2)
@@ -176,7 +176,7 @@ function choiceMade(b) {
     if(width < height){
       img.resize(width/2, 0)
     }else{
-      img.resize(0, height)
+      img.resize(0, height - 40)
     }
     
     image(img, width/2, (height - img.height)/2);
